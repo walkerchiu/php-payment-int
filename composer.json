@@ -1,0 +1,42 @@
+{
+    "name": "walkerchiu/php-payment-int",
+    "type": "library",
+    "authors": [
+        {
+            "name":  "Walker Chiu",
+            "email": "chenjen.chiou@gmail.com"
+        }
+    ],
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "php": "^7.3",
+        "paypal/paypal-checkout-sdk": "^1.0",
+        "walkerchiu/php-core-int": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "WalkerChiu\\Payment\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "WalkerChiu\\Payment\\PaymentServiceProvider"
+            ],
+            "aliases": {
+                "Payment": "WalkerChiu\\Payment\\Models\\Entities\\Payment",
+                "Bank":    "WalkerChiu\\Payment\\Models\\Entities\\Bank",
+                "ECPay":   "WalkerChiu\\Payment\\Models\\Entities\\ECPay",
+                "PayPal":  "WalkerChiu\\Payment\\Models\\Entities\\PayPal",
+                "TTPay":   "WalkerChiu\\Payment\\Models\\Entities\\TTPay"
+            }
+        }
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true
+    }
+}
