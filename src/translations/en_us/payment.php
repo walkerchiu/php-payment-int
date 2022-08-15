@@ -14,6 +14,7 @@ return [
     'serial'      => 'Serial',
     'type'        => 'Type',
     'order'       => 'Order',
+    'options'     => 'Options',
     'is_enabled'  => 'Is Enabled',
     'name'        => 'Name',
     'description' => 'Description',

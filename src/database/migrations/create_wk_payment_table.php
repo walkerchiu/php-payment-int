@@ -14,6 +14,7 @@ class CreateWkPaymentTable extends Migration
             $table->string('serial')->nullable();
             $table->string('type');
             $table->unsignedBigInteger('order')->nullable();
+            $table->json('options')->nullable();
             $table->boolean('is_enabled')->default(0);
 
             $table->timestampsTz();

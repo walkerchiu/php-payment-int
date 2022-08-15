@@ -14,6 +14,7 @@ return [
     'serial'      => '編號',
     'type'        => '管道',
     'order'       => '排序',
+    'options'     => '選項',
     'is_enabled'  => '是否啟用',
     'name'        => '名稱',
     'description' => '描述',

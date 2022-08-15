@@ -24,7 +24,8 @@ class Payment extends Entity
         $this->fillable = array_merge($this->fillable, [
             'host_type', 'host_id',
             'serial', 'type',
-            'order'
+            'order',
+            'options',
         ]);
 
         parent::__construct($attributes);
