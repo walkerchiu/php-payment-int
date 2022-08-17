@@ -23,7 +23,8 @@ class Bank extends Entity
 
         $this->fillable = array_merge($this->fillable, [
             'host_id',
-            'swift_id', 'bank_id', 'branch_id', 'account_number', 'account_name'
+            'swift_id', 'bank_id', 'branch_id', 'account_number', 'account_name',
+            'options',
         ]);
 
         parent::__construct($attributes);

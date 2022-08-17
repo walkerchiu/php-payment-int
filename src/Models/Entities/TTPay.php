@@ -28,7 +28,8 @@ class TTPay extends Entity
             'ccy', 'lang',
             'salesman', 'cashier',
             'url_return',
-            'timeout'
+            'timeout',
+            'options',
         ]);
 
         parent::__construct($attributes);

@@ -7,7 +7,6 @@ use WalkerChiu\Payment\Models\Entities\TTPay;
 
 $factory->define(TTPay::class, function (Faker $faker) {
     return [
-        'host_id'    => 1,
         'apiKey'     => $faker->password,
         'secret'     => $faker->password,
         'storeCode'  => 'ST01',

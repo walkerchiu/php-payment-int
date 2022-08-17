@@ -7,7 +7,6 @@ use WalkerChiu\Payment\Models\Entities\PayPal;
 
 $factory->define(PayPal::class, function (Faker $faker) {
     return [
-        'host_id'       => 1,
         'username'      => $faker->username,
         'password'      => $faker->password,
         'client_id'     => $faker->slug,

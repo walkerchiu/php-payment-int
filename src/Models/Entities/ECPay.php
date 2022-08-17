@@ -26,7 +26,8 @@ class ECPay extends Entity
             'merchant_id', 'method',
             'hash_key', 'hash_iv',
             'url_notify', 'url_return',
-            'hash_key_invoice', 'hash_iv_invoice'
+            'hash_key_invoice', 'hash_iv_invoice',
+            'options',
         ]);
 
         parent::__construct($attributes);

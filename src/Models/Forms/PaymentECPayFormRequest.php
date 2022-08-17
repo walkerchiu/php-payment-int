@@ -40,6 +40,7 @@ class PaymentECPayFormRequest extends FormRequest
             'serial'     => trans('php-payment::payment.serial'),
             'type'       => trans('php-payment::payment.type'),
             'order'      => trans('php-payment::payment.order'),
+            'options'    => trans('php-payment::payment.options'),
             'is_enabled' => trans('php-payment::payment.is_enabled'),
 
             'merchant_id'      => trans('php-payment::ecpay.merchant_id'),
@@ -70,6 +71,7 @@ class PaymentECPayFormRequest extends FormRequest
             'serial'     => '',
             'type'       => '',
             'order'      => 'nullable|numeric|min:0',
+            'options'    => 'nullable|json',
             'is_enabled' => 'boolean',
 
             'merchant_id'      => 'required|string',
@@ -116,6 +118,7 @@ class PaymentECPayFormRequest extends FormRequest
             'host_id.min'             => trans('php-core::validation.min'),
             'order.numeric'           => trans('php-core::validation.numeric'),
             'order.min'               => trans('php-core::validation.min'),
+            'options.json'            => trans('php-core::validation.json'),
             'is_enabled.boolean'      => trans('php-core::validation.boolean'),
 
             'merchant_id.required'    => trans('php-core::validation.required'),

@@ -40,6 +40,7 @@ class PaymentBankFormRequest extends FormRequest
             'serial'         => trans('php-payment::payment.serial'),
             'type'           => trans('php-payment::payment.type'),
             'order'          => trans('php-payment::payment.order'),
+            'options'        => trans('php-payment::payment.options'),
             'is_enabled'     => trans('php-payment::payment.is_enabled'),
 
             'swift_id'       => trans('php-payment::bank.swift_id'),
@@ -70,6 +71,7 @@ class PaymentBankFormRequest extends FormRequest
             'serial'         => '',
             'type'           => '',
             'order'          => 'nullable|numeric|min:0',
+            'options'        => 'nullable|json',
             'is_enabled'     => 'required|boolean',
 
             'swift_id'       => 'nullable|string|min:2|max:15',
@@ -116,6 +118,7 @@ class PaymentBankFormRequest extends FormRequest
             'host_id.min'              => trans('php-core::validation.min'),
             'order.numeric'            => trans('php-core::validation.numeric'),
             'order.min'                => trans('php-core::validation.min'),
+            'options.json'             => trans('php-core::validation.json'),
             'is_enabled.required'      => trans('php-core::validation.required'),
             'is_enabled.boolean'       => trans('php-core::validation.boolean'),
 

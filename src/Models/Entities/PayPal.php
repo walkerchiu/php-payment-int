@@ -26,7 +26,8 @@ class PayPal extends Entity
             'username', 'password',
             'client_id', 'client_secret',
             'url_cancel', 'url_return',
-            'currency', 'locale', 'intent'
+            'currency', 'locale', 'intent',
+            'options',
         ]);
 
         parent::__construct($attributes);
