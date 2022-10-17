@@ -162,11 +162,11 @@ class PaymentTTPayFormRequest extends FormRequest
                 && isset($data['host_id'])
             ) {
                 if (
-                    config('wk-payment.onoff.site')
-                    && !empty(config('wk-core.class.site.site'))
-                    && $data['host_type'] == config('wk-core.class.site.site')
+                    config('wk-payment.onoff.site-mall')
+                    && !empty(config('wk-core.class.site-mall.site'))
+                    && $data['host_type'] == config('wk-core.class.site-mall.site')
                 ) {
-                    $result = DB::table(config('wk-core.table.site.sites'))
+                    $result = DB::table(config('wk-core.table.site-mall.sites'))
                                 ->where('id', $data['host_id'])
                                 ->exists();
                     if (!$result)
